@@ -446,16 +446,16 @@ const siteData = {
   handle: '@CyberWan',
   role: 'CS Student & AI Explorer',
   location: 'Shanghai / Remote',
-  url: 'https://YOUR-USERNAME.github.io/cyberwan-blog/',
+  url: 'https://cwq-ui.github.io/cyberwan-blog/',
   email: 'hello@cyberwan.dev',
-  github: 'https://github.com/',
+  github: 'https://github.com/CWQ-UI',
   rss: 'feed.xml',
 };
 
 /* ---------------- 评论系统（Giscus） ---------------- */
 const commentsConfig = {
   provider: 'giscus',
-  repo: '',
+  repo: 'CWQ-UI/cyberwan-blog',
   repoId: '',
   category: 'General',
   categoryId: '',
