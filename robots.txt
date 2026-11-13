@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # 发布前：把 YOUR-USERNAME 改成你的 GitHub 用户名。
-Sitemap: https://YOUR-USERNAME.github.io/cyberwan-blog/sitemap.xml
+Sitemap: https://cwq-ui.github.io/cyberwan-blog/sitemap.xml
