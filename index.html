@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="@CyberWan 的个人博客。计算机科学在读，AI 探索者，记录代码、模型和日常思考。">
+  <meta property="og:title" content="@CyberWan · 个人博客">
+  <meta property="og:description" content="计算机科学在读，AI 探索者，记录代码、模型和日常思考。">
+  <meta property="og:type" content="website">
+  <title>@CyberWan · 个人博客</title>
+
+  <link rel="alternate" type="application/rss+xml" title="@CyberWan" href="feed.xml">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='28' font-weight='700' fill='white'%3ECW%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" data-nav="home" aria-label="返回首页">
+        <span class="brand-mark">CW</span>
+        <span class="brand-copy">
+          <strong>@CyberWan</strong>
+          <small>写代码，也写点别的</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#home" data-nav="home">首页</a>
+        <a href="#journal" data-nav="journal">文章</a>
+        <a href="#projects" data-nav="projects">项目</a>
+        <a href="#archive" data-nav="archive">归档</a>
+        <a href="#about" data-nav="about">关于</a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="search-box" for="searchInput">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.2 4.2"></path></svg>
+          <input id="searchInput" type="search" placeholder="搜索文章…" autocomplete="off" spellcheck="false" aria-label="搜索文章">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="切换到深色模式" title="切换深浅色">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HOME ============ -->
+    <div id="homeView">
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> 计算机科学在读 · AI 探索者</p>
+          <h1>你好，我是<br><span class="title-accent">@CyberWan</span></h1>
+          <p class="hero-lead">
+            我在这个角落记录代码、模型，以及那些不太容易归类的想法。
+            喜欢把好奇心做成小产品，也喜欢在深夜研究一些“好像没什么用”的东西。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#journal" data-nav="journal">
+              阅读文章
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a class="button button-ghost" href="#about" data-nav="about">关于我</a>
+          </div>
+          <ul class="hero-facts" aria-label="基本信息">
+            <li>📍 Shanghai / Remote</li>
+            <li>🎓 Computer Science</li>
+            <li>🤖 AI &amp; Web</li>
+            <li>☕ 咖啡因驱动</li>
+          </ul>
+        </div>
+
+        <aside class="now-card" aria-label="近况">
+          <div class="now-head">
+            <span class="status-badge"><i></i> ONLINE</span>
+            <span class="local-time" id="localTime">--:--</span>
+          </div>
+          <p class="now-quote">“把好奇心编译成产品。”</p>
+          <div class="now-list">
+            <div><span>正在</span><strong>研究本地 LLM 与前端交互</strong></div>
+            <div><span>最近读</span><strong>《设计中的设计》</strong></div>
+            <div><span>状态</span><strong>开放合作 / 欢迎聊天</strong></div>
+          </div>
+          <div class="now-profile">
+            <span class="avatar">CW</span>
+            <div>
+              <strong>@CyberWan</strong>
+              <small>CS Student &amp; AI Explorer</small>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="notes-section" id="notes" aria-labelledby="notesTitle">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NOTES</p>
+            <h2 id="notesTitle">最近动态</h2>
+          </div>
+          <p class="section-count">随手记下的一些瞬间</p>
+        </div>
+        <div class="notes-grid" id="notesList"></div>
+      </section>
+
+      <section class="journal" id="journal" aria-labelledby="journalTitle">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">JOURNAL</p>
+            <h2 id="journalTitle">最近写的东西</h2>
+          </div>
+          <p class="section-count">共 <span id="postCount">03</span> 篇</p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="tag-filters" id="tagFilters" aria-label="按标签筛选"></div>
+          <p class="filter-status" id="resultText">[ 3 篇文章 ]</p>
+        </div>
+
+        <div class="content-grid">
+          <div class="posts-column">
+            <div class="post-grid" id="postGrid" aria-live="polite"></div>
+
+            <div class="empty-state" id="emptyState" hidden>
+              <div class="empty-icon" aria-hidden="true">⌕</div>
+              <h3>没有找到相关文章</h3>
+              <p>试着换一个关键词，或者清除筛选条件。</p>
+              <button class="button button-ghost" id="resetFilters" type="button">清除筛选</button>
+            </div>
+          </div>
+
+          <div class="sidebar" role="region" aria-label="侧边栏">
+            <section class="panel about-panel" id="aboutCard" aria-labelledby="aboutTitle">
+              <div class="panel-heading">
+                <p>ABOUT</p>
+                <h3 id="aboutTitle">关于我</h3>
+              </div>
+              <div class="about-profile">
+                <span class="avatar avatar-large">CW</span>
+                <div>
+                  <strong>@CyberWan</strong>
+                  <span>计算机科学在读</span>
+                </div>
+              </div>
+              <p class="about-text">
+                一半时间写代码，一半时间研究别人怎么写代码。
+                对 AI、Web、Linux 和所有能把想法变成现实的东西感兴趣。
+              </p>
+              <div class="about-tags">
+                <span>AI</span><span>Web</span><span>Linux</span><span>设计</span>
+              </div>
+              <div class="about-links">
+                <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:hello@cyberwan.dev">Email</a>
+                <a href="feed.xml" target="_blank" rel="noopener">RSS</a>
+              </div>
+            </section>
+
+            <section class="panel" aria-labelledby="topicsTitle">
+              <div class="panel-heading">
+                <p>TOPICS</p>
+                <h3 id="topicsTitle">常写的话题</h3>
+              </div>
+              <div class="topic-list" id="topicList"></div>
+            </section>
+
+            <section class="panel now-panel" aria-labelledby="nowTitle">
+              <div class="panel-heading">
+                <p>NOW</p>
+                <h3 id="nowTitle">最近</h3>
+              </div>
+              <ul class="now-list compact">
+                <li><span>在做</span><strong>一个本地 AI 小工具</strong></li>
+                <li><span>在看</span><strong>3Blue1Brown 的线代课</strong></li>
+                <li><span>在听</span><strong>Lo-fi &amp; 雨声</strong></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ PROJECTS ============ -->
+    <div id="projectsView" class="page-view" hidden>
+      <section class="page-hero">
+        <p class="section-kicker">PROJECTS</p>
+        <h1>做过的东西</h1>
+        <p>一些课程项目、开源实验和折腾记录。正在持续更新。</p>
+      </section>
+      <h2 class="sr-only">项目列表</h2>
+      <div class="project-grid" id="projectGrid"></div>
+      <p class="page-note">项目会陆续补充。也可以直接去 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> 看代码。</p>
+    </div>
+
+    <!-- ============ ARCHIVE ============ -->
+    <div id="archiveView" class="page-view" hidden>
+      <section class="page-hero">
+        <p class="section-kicker">ARCHIVE</p>
+        <h1>文章归档</h1>
+        <p>按时间顺序整理的全部文章。</p>
+      </section>
+      <div class="archive-list" id="archiveList"></div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <div id="aboutView" class="page-view" hidden>
+      <section class="about-hero">
+        <span class="avatar about-avatar">CW</span>
+        <div>
+          <p class="section-kicker">ABOUT</p>
+          <h1>你好，我是 @CyberWan</h1>
+          <p class="about-role">计算机科学在读 · AI 探索者</p>
+          <p class="about-intro" id="aboutIntro"></p>
+          <div class="about-actions">
+            <a class="button button-primary" href="mailto:hello@cyberwan.dev">发邮件</a>
+            <a class="button button-ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a class="button button-ghost" id="resumeButton" hidden href="#">下载简历</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="about-grid">
+        <section class="about-block">
+          <p class="section-kicker">SKILLS</p>
+          <h2>技能</h2>
+          <div class="skill-list" id="skillList"></div>
+        </section>
+        <section class="about-block">
+          <p class="section-kicker">TIMELINE</p>
+          <h2>经历</h2>
+          <div class="timeline" id="timelineList"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ============ ARTICLE ============ -->
+    <div id="articleView" class="article-view" hidden>
+      <div class="reading-progress" aria-hidden="true"><span id="readingBar"></span></div>
+      <div class="article-container">
+        <div class="article-topbar">
+          <button class="back-button" id="backButton" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg>
+            返回文章列表
+          </button>
+          <div class="article-tools">
+            <button class="tool-button toc-toggle" id="tocToggle" type="button" aria-expanded="false">目录</button>
+            <div class="font-controls" aria-label="调整正文字号">
+              <button class="tool-button" id="fontDown" type="button" aria-label="缩小字号">A−</button>
+              <button class="tool-button" id="fontUp" type="button" aria-label="放大字号">A+</button>
+            </div>
+            <button class="tool-button" id="copyLink" type="button">复制链接</button>
+          </div>
+        </div>
+
+        <div class="article-layout">
+          <aside class="article-toc" aria-label="文章目录">
+            <p class="toc-title">目录</p>
+            <nav id="tocNav"></nav>
+          </aside>
+
+          <article class="article-body" id="articleBody">
+            <header class="article-header">
+              <p class="article-kicker" id="articleKicker">JOURNAL</p>
+              <h1 id="articleTitle" tabindex="-1">文章标题</h1>
+              <p class="article-subtitle" id="articleSubtitle"></p>
+              <div class="article-meta">
+                <span id="articleDate"></span>
+                <span class="meta-dot"></span>
+                <span id="articleReadTime"></span>
+                <span class="meta-dot"></span>
+                <span>@CyberWan</span>
+              </div>
+              <div class="article-tags" id="articleTags"></div>
+              <div class="share-row" aria-label="分享这篇文章">
+                <span>分享</span>
+                <button id="shareNative" type="button">分享</button>
+                <a id="shareWeibo" href="https://service.weibo.com/share/share.php" target="_blank" rel="noopener">微博</a>
+                <a id="shareX" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener">X</a>
+              </div>
+            </header>
+
+            <div class="article-content" id="articleContent"></div>
+
+            <section class="comments-section" aria-labelledby="commentsTitle">
+              <div class="comments-heading">
+                <p class="section-kicker">COMMENTS</p>
+                <h2 id="commentsTitle">评论</h2>
+              </div>
+              <div id="giscusThread"></div>
+              <p class="comments-note" id="commentsNote"></p>
+            </section>
+
+            <footer class="article-footer">
+              <div class="article-author">
+                <span class="avatar">CW</span>
+                <div>
+                  <strong>@CyberWan</strong>
+                  <p>计算机科学在读，AI 探索者。感谢你读到这里。</p>
+                </div>
+              </div>
+              <button class="button button-ghost" id="articleBackButton" type="button">← 返回文章列表</button>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="#home" data-nav="home">@CyberWan</a>
+        <p>记录代码、模型和日常思考。</p>
+      </div>
+      <div class="footer-links">
+        <a href="#journal" data-nav="journal">文章</a>
+        <a href="#projects" data-nav="projects">项目</a>
+        <a href="#archive" data-nav="archive">归档</a>
+        <a href="#about" data-nav="about">关于</a>
+        <a href="feed.xml" target="_blank" rel="noopener">RSS</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:hello@cyberwan.dev">Email</a>
+      </div>
+      <p class="site-stats" id="siteStats">
+        本站访问 <span id="busuanzi_value_site_pv">—</span> 次 · 访客 <span id="busuanzi_value_site_uv">—</span> 人
+      </p>
+      <p class="copyright">© <span id="year">2026</span> @CyberWan. Built with plain HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="查看大图">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭大图">×</button>
+    <img id="lightboxImage" alt="">
+  </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">↑</button>
+
+  <noscript>
+    <div class="noscript">这个博客需要 JavaScript 才能渲染文章，请开启后刷新页面。</div>
+  </noscript>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>
