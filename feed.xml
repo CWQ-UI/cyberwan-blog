@@ -3,32 +3,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>@CyberWan · 个人博客</title>
-    <link>https://YOUR-USERNAME.github.io/cyberwan-blog/</link>
+    <link>https://cwq-ui.github.io/cyberwan-blog/</link>
     <description>计算机科学在读，AI 探索者，记录代码、模型和日常思考。</description>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 20 Nov 2026 12:00:00 +0800</lastBuildDate>
-    <atom:link href="https://YOUR-USERNAME.github.io/cyberwan-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cwq-ui.github.io/cyberwan-blog/feed.xml" rel="self" type="application/rss+xml" />
 
     <item>
       <title>从零手搓一个赛博朋克粒子网络</title>
-      <link>https://YOUR-USERNAME.github.io/cyberwan-blog/#post/build-a-particle-network</link>
-      <guid isPermaLink="true">https://YOUR-USERNAME.github.io/cyberwan-blog/#post/build-a-particle-network</guid>
+      <link>https://cwq-ui.github.io/cyberwan-blog/#post/build-a-particle-network</link>
+      <guid isPermaLink="true">https://cwq-ui.github.io/cyberwan-blog/#post/build-a-particle-network</guid>
       <pubDate>Sun, 08 Nov 2026 12:00:00 +0800</pubDate>
       <description><![CDATA[不用任何粒子库，只用一块 Canvas、一点三角函数和对性能的敬畏，做一片会呼吸的赛博星云。附完整代码骨架与掉帧排查记录。]]></description>
     </item>
 
     <item>
       <title>在本地跑起你的第一个 LLM：Ollama 踩坑实录</title>
-      <link>https://YOUR-USERNAME.github.io/cyberwan-blog/#post/run-local-llm-with-ollama</link>
-      <guid isPermaLink="true">https://YOUR-USERNAME.github.io/cyberwan-blog/#post/run-local-llm-with-ollama</guid>
+      <link>https://cwq-ui.github.io/cyberwan-blog/#post/run-local-llm-with-ollama</link>
+      <guid isPermaLink="true">https://cwq-ui.github.io/cyberwan-blog/#post/run-local-llm-with-ollama</guid>
       <pubDate>Tue, 27 Oct 2026 12:00:00 +0800</pubDate>
       <description><![CDATA[从一台没有独立显卡的笔记本出发，把 7B 模型跑进终端。显存、量化、上下文窗口，以及那些教程不会告诉你的坑。]]></description>
     </item>
 
     <item>
       <title>给终端装上义肢：我的 Linux + Neovim 工作流</title>
-      <link>https://YOUR-USERNAME.github.io/cyberwan-blog/#post/linux-neovim-workflow</link>
-      <guid isPermaLink="true">https://YOUR-USERNAME.github.io/cyberwan-blog/#post/linux-neovim-workflow</guid>
+      <link>https://cwq-ui.github.io/cyberwan-blog/#post/linux-neovim-workflow</link>
+      <guid isPermaLink="true">https://cwq-ui.github.io/cyberwan-blog/#post/linux-neovim-workflow</guid>
       <pubDate>Mon, 12 Oct 2026 12:00:00 +0800</pubDate>
       <description><![CDATA[从 dotfiles 到 tmux，从 lazy.nvim 到 git worktree：一套不追求炫技、只追求手感的终端工作流。]]></description>
     </item>
